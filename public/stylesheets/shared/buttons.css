@@ -1,0 +1,39 @@
+.btn-row {
+    display: flex;
+}
+
+.btn-row > * {
+    margin-left: 1rem;
+}
+
+.btn-row > *:first-child {
+    margin-left: 0;
+}
+
+.btn {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--color-background-dark);
+    border: solid 1px var(--color-background-dark);
+}
+
+.btn-primary {
+    background-color: var(--color-btn-background-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-btn-background-light-hover);
+}
+
+.btn-danger {
+    background-color: var(--color-background-light-danger);
+}
+
+.btn-danger:hover {
+    background-color: var(--color-background-light-danger-hover);
+}

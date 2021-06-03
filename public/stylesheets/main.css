@@ -1,0 +1,32 @@
+@import 'shared/fonts.css';
+@import 'shared/header.css';
+@import 'shared/variables.css';
+@import 'shared/buttons.css';
+@import 'shared/author.css';
+@import 'shared/book.css';
+@import 'shared/form.css';
+
+:root {
+    color: var(--color-text-light);
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.inner-container {
+    margin: 2rem;
+}
+
+body {
+    background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light));
+}
+
+.page-header {
+    font-size: 2rem;
+    font-weight: 500;
+}

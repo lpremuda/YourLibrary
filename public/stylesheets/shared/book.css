@@ -1,0 +1,61 @@
+.book-cover {
+  width: var(--book-cover-width);
+  height: var(--book-cover-height);
+  margin-bottom: 0;
+}
+
+.book-details {
+  display: flex;
+}
+
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-details-grid {
+  margin-top: 0.75rem;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+.marginTop0p4rem {
+  margin-top: 0.4rem;
+}
+
+.marginTop1p5rem {
+  margin-top: 1.5rem;
+}
+
+.book-info-grid {
+  margin-left: 1rem;
+  display: grid;
+  align-content: flex-start;
+  align-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto;
+}
+
+.book-info-label {
+  font-size: 1.2rem;
+}
+
+.flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-row-wrap > a {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.books-recently-added {
+  display: flex;
+}
+

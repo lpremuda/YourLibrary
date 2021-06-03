@@ -1,0 +1,26 @@
+:root {
+  --font-family: 'Viga';
+
+  --color-base-hue: 240;
+  --color-background-dark: hsl(var(--color-base-hue),100%,8%);
+  --color-background-light: hsl(var(--color-base-hue),100%,20%);
+  --color-text-light: hsl(var(--color-base-hue),100%,80%);
+  --color-text-light-hover: hsl(var(--color-base-hue),100%,100%);
+  --color-btn-background-light: hsl(var(--color-base-hue),100%,80%);
+  --color-btn-background-light-hover: hsl(var(--color-base-hue),100%,60%);
+
+  --color-danger-hue: calc(var(--color-base-hue) - 180);
+  --color-background-light-danger: hsl(var(--color-danger-hue),100%,80%);
+  --color-background-light-danger-hover: hsl(var(--color-danger-hue),100%,70%);
+  --color-background-dark-danger: hsl(var(--color-danger-hue),100%,8%);
+
+  --form-input-background-color: hsl(var(--color-base-hue),100%,32%);
+  --form-input-border-color: var(--color-btn-background-light-hover);
+
+  --book-cover-width: 200px;
+  --book-cover-width-large: 325px;
+  --book-aspect-ratio: 0.75;
+  --book-cover-height: calc(var(--book-cover-width) / var(--book-aspect-ratio));
+  --book-cover-height-large: calc(var(--book-cover-width-large) / var(--book-aspect-ratio));
+
+}

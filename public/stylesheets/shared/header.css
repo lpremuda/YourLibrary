@@ -1,0 +1,43 @@
+:root {
+    --nav-title-font-size: 3rem;
+
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.header-title {
+    color: var(--color-text-light);
+    font-size: var(--nav-title-font-size);
+    font-weight: 700;
+}
+
+.header-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.header-nav a {
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: var(--color-text-light-hover);
+}
+
+.header-nav li {
+    list-style-type: none;
+}
+
+.header-nav li a {
+    color: var(--color-text-light);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1rem;
+}
