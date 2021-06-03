@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+  const dotenv = require('dotenv').config()
+}
+
 const express = require('express')
 const app = express()
 const expressLayouts = require('express-ejs-layouts')
@@ -15,7 +19,7 @@ app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(express.static('public'))
 
-mongoose.connect('mongodb://localhost/mybrary-my-try', {
+mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
