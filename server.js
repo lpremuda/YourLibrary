@@ -8,7 +8,7 @@ const expressLayouts = require('express-ejs-layouts')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const mongoose = require('mongoose')
-const portNum = 3002
+const portNum = 3000
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
