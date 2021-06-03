@@ -39,7 +39,7 @@ app.use('/', indexRouter)
 app.use('/authors', authorRouter)
 app.use('/books', bookRouter)
 
-app.listen(portNum, () => {
+app.listen(process.env.PORT || portNum, () => {
     console.log(`Opened connection for Express app on port ${portNum}`)
 })
 
