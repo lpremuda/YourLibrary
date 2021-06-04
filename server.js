@@ -12,7 +12,7 @@ const portNum = 3000
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
-app.set('layout', 'layouts/layout_Lucas')
+app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(methodOverride('_method'))
 // app.use(bodyParser.text())
