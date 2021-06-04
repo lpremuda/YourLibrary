@@ -23,8 +23,8 @@
   text-align: center;
 }
 
-.marginTop0p4rem {
-  margin-top: 0.4rem;
+.marginTop0p7rem {
+  margin-top: 0.7rem;
 }
 
 .marginTop1p5rem {
@@ -44,6 +44,10 @@
   font-size: 1.2rem;
 }
 
+.book-description {
+  align-self: start;
+}
+
 .flex-row-wrap {
   display: flex;
   flex-direction: row;
@@ -57,5 +61,15 @@
 
 .books-recently-added {
   display: flex;
+}
+
+.hover-motion > a {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.hover-motion > a:hover {
+  top: -10px;
 }
 

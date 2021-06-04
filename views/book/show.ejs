@@ -5,12 +5,12 @@
         <img src="<%= book.coverImageDataURL %>" height="300px">
     </div>
     <div class="book-details-grid">
-      <div class="btn-row">
-        <a class="btn btn-primary" href="/books/<%= book.id %>/edit">Edit</a>
-        <%- include('../partials/deleteForm', { url: `/books/${book.id}` }) %>
+      <div class="btn-row full-width">
+        <a class="btn btn-primary flex-grow" href="/books/<%= book.id %>/edit">Edit</a>
+        <%- include('../partials/deleteFormFlex', { url: `/books/${book.id}` }) %>
       </div>
       <div class="btn-row flex-grow">
-        <a class="btn btn-primary full-width marginTop0p4rem" href="/authors/<%= book.author.id %>">View Author</a>
+        <a class="btn btn-primary full-width marginTop0p7rem" href="/authors/<%= book.author.id %>">View Author</a>
       </div>
     </div>
   </div>
@@ -21,7 +21,7 @@
       <div><%= book.publishDate.toDateString() %></div>  
       <div class="book-info-label">Page Count:</div>
       <div><%= book.pageCount %></div>
-      <div class="book-info-label">Description:</div>
+      <div class="book-info-label book-description">Description:</div>
       <div><%= book.description %></div>
   </div>
 </div>
