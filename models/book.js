@@ -39,9 +39,10 @@ const bookSchema = new mongoose.Schema({
 })
 
 bookSchema.virtual('coverImageDataURL').get(function() {
-    coverImage = this.coverImage
-    coverImageBase64 = coverImage.toString('base64')
-    return `data:${this.coverImageType};charset=utf-8;base64,${coverImageBase64}`
+    if (this.coverImage != null && this.coverImageType != null) {
+      coverImageBase64 = this.coverImage.toString('base64')
+      return `data:${this.coverImageType};charset=utf-8;base64,${coverImageBase64}`
+    }
 })
 
 
